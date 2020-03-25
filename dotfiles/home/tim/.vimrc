@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'elzr/vim-json'
-source /home/tim/Dev/Mip/compile_func.vim
+source ~/.compile_func.vim
 
 call vundle#end()            " required
 
@@ -88,7 +88,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+"autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
