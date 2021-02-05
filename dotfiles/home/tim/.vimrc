@@ -17,6 +17,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'elzr/vim-json'
 source ~/.compile_func.vim
 
+cmap w!! w !sudo tee > /dev/null %
+
 call vundle#end()            " required
 
 call plug#begin('~/.vim/plugged')
